@@ -1,0 +1,250 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #1F1F27;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+	width: 100%;
+	background: #1F1F27;
+	background-image: url(lights.jpg);
+	background-size: cover;
+	text-align: center;
+	padding: 20px 24px 30px;
+}
+	header .logo-header {
+		
+	}
+	header .logo-header .logo {
+		height: 1.5em;
+	}
+	header h1 {
+		color: #FFF;
+		margin-top: 1.5em;
+		font-size: 1.5em;
+		line-height: 1.3em;
+		font-weight: 600;
+	}
+		header h1 span {
+			clear: both;
+			text-transform: uppercase;
+			font-size: 0.7em;
+		}
+.section {
+	text-align: center;
+	padding: 42px 24px;
+}
+	.section h2 {
+		font-size: 1.5em;
+		font-weight: 600;
+		margin-bottom: 0.8em;
+	}
+	.section p {
+		
+	}
+	
+ul {
+	padding: 0 0.3em;
+	margin-top: 2em;
+}
+
+.item {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	background-image: url(list-stick.png);
+	background-repeat: no-repeat;
+	background-position: 65px 5px;
+	background-size: 20px;
+}
+
+	.item .date {
+		justify-content: space-between;
+		font-size: 1.25em;
+		font-weight: 800;
+		margin-top: 3px;
+	}
+
+	.item .item-invention {
+		justify-content: space-between;
+		text-align: left;
+		margin-left: 50px;
+	}
+	.item .item-title {
+		font-size: 1.25em;
+		display: table-row;
+	}
+	
+	.item .item-inventor {
+		font-size: 1.1em;
+		color: #1F1F27;
+		display: table-row;
+	}
+	.item p {
+		font-size: 1em;
+		display: block;
+		padding-bottom: 1.5em;
+	}
+
+.section .logo {
+		height: 2em;
+		margin-top: 4em;
+	}
+
+
+.red {
+	background: #E7406A;
+	color: #FFF;
+}
+.green {
+	background: #359D67;
+	min-height: 300px;
+	color: #FFF;
+	background-image: url(BOT.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center 80%;
+}
+	
+.tinsl-text {
+	text-transform: uppercase;
+	font-weight: 800;
+}
+p {
+	color: inherit;
+	margin-bottom: 1em;
+	font-size: 1em;
+	line-height: 1.3em;	
+}
+p:last-of-type {
+	margin-bottom: 0;
+}
+h3 {
+	font-size: 3em;
+	margin-bottom: 0.2em;
+	font-weight: 800;
+}
+h4 {
+	
+}
+
+@media screen and (min-width:500px) {
+	body {
+		font-size: 24px;
+	}
+	header {
+		height: 600px;
+		padding: 100px 25% 30px;
+	}
+		header .logo-header .logo {
+			height: 1.5em;
+		}
+		header h1 {
+			margin-top: 1.5em;
+			font-size: 2em;
+		}
+	.section {
+		padding: 42px 25%;
+	}
+		.section h2 {
+			font-size: 2em;
+		}
+		
+	ul {
+		padding: 0 0.3em;
+		margin-top: 2em;
+	}
+	
+	.item {
+		background-position: 135px 13px;
+		background-size: 40px;
+	}
+	
+		.item .date {
+			font-size: 2em;
+			margin-top: 8px;
+		}
+	
+		.item .item-invention {
+			margin-left: 80px;
+		}
+		.item .item-title {
+			font-size: 2em;
+		}		
+		.item .item-inventor {
+			font-size: 1.1em;
+		}
+		.item p {
+			font-size: 1em;
+			padding-bottom: 1.5em;
+		}
+	
+	.section .logo {
+			height: 1.5em;
+			margin-top: 2em;
+		}
+
+	.green {
+		min-height: 600px;
+	}
+}
